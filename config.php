@@ -2,9 +2,9 @@
 header("Access-Control-Allow-Origin: *");
 
 $h 		=	"localhost";
-$u 		=	"id752914_nbot";
-$p 		=	"televizor2";
-$db 	=	"id752914_nbot"; //database name
+$u 		=	"";
+$p 		=	"";
+$db 	=	""; //database name
 
 $mysqli 	= 	new mysqli($h, $u, $p, $db, 0);
 $mysqli->query("SET NAMES utf8");
