@@ -1,0 +1,368 @@
+<div class="target-padding">
+	<h1>Commands</h1>
+			
+<div class="commandList">
+
+	<h2>General</h2>
+	<h3>Staff commands</h3>
+	
+	<ul class="commands">
+
+		<li><a>manager</a></li>
+		<li><a>bouncer</a></li>
+		<li><a>resident</a></li>
+		<li><a>cohost</a></li>
+	</ul>
+
+	<h3>Origem Bot engine / settings</h3>
+	<ul class="commands">
+		<li><a>die</a></li>
+		<li><a>reload</a></li>
+		<li><a>autodc</a></li>
+		<li><a>set</a></li>
+		<li><a>msg</a></li>
+		<li><a>commandlog</a></li>
+		<li><a>hidecommands</a></li>
+		<li><a>skiphistory</a></li>
+	</ul>
+
+	<h3>Users / CHAT</h3>
+
+	<ul class="commands">
+		<li><a>mute</a></li>
+		<li><a>unmute</a></li>
+		<li><a>ban</a></li>
+
+	</ul>
+
+	<h2>WaitList / DJ</h2>
+	<ul class="commands">
+		<li><a>lock</a></li>
+		<li><a>unlock</a></li>
+		<li><a>clearwaitlist</a></li>
+		<li><a>swap</a></li>
+		<li><a>move</a></li>
+		<li><a>tryagain</a></li>
+		<li><a>dc</a></li>
+
+		<li><a>skip</a></li>
+		<li><a>songban</a></li>
+		<li><a>songunban</a></li>
+
+		<li><a>voteskip</a></li>
+	</ul>
+
+	<h2>Other</h2>
+	<ul class="commands">
+
+		<li><a>bot woot</a></li>
+		<li><a>roomstats</a></li>
+		<li><a>download</a></li>
+		<li><a>help</a></li>
+		<li><a>roll</a></li>
+		<li><a>afks</a></li>
+		<li><a>ping</a></li>
+		<li><a>clearchat</a></li>
+		<li><a>roulette</a></li>
+		<li><a>autoroulette</a></li>
+		<li><a>stoproulette</a></li>
+		<li><a>play</a></li>
+		<li><a>players</a></li>
+		<li><a>filter</a></li>
+		<li><a>wlfilter</a></li>
+		<li><a>fb</a></li>
+		<li><a>rules</a></li>
+
+	</ul>
+	<div class="divider"></div>
+	<div class="command">
+		<h5 id="help">COMMAND</h5>
+		<span class="info">INFO</span>
+		<span class="i">EXAMPLE</span><br class="clearBoth">
+	</div>
+
+	<div class="command">
+		<h5 id="help">Help</h5>
+		<span class="info">Show help</span>
+		<span class="i">help</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="manager">manager</h5>
+		<span class="info">Add new manager</span>
+		<span class="i">manager @user</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="bouncer">bouncer</h5>
+		<span class="info">Add new bouncer</span>
+		<span class="i">bouncer @user</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="resident">resident</h5>
+		<span class="info">Add new resident dj</span>
+		<span class="i">resident @user</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="cohost">cohost</h5>
+		<span class="info">Add new co-host</span>
+		<span class="i">cohost @user</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="reload">reload</h5>
+		<span class="info">Reload Origem Bot</span>
+		<span class="i">reload</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="die">die</h5>
+		<span class="info">Turn off Origem Bot</span>
+		<span class="i">die</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="mute">mute</h5>
+		<span class="info">Mute user</span>
+		<span class="i">mute @user 15/30/45</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="unmute">unmute</h5>
+		<span class="info">Unmute user</span>
+		<span class="i">unmute @user</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="ban">ban</h5>
+		<span class="info">Ban user</span>
+		<span class="i">ban @user 1/24/perma</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="skip">skip</h5>
+		<span class="info">Skip current song</span>
+		<span class="i">skip</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="tryagain">tryagain</h5>
+		<span class="info">Lock, Skip, Add skipped user to WaitList, Move skipped user to 1, Unlock</span>
+		<span class="i">tryagain</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="msg">msg</h5>
+		<span class="info">On/Off messages (welcome, grab, stats)</span>
+		<span class="i">msg [welcome/grab/stats] [on/off]</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="set">set</h5>
+		<span class="info">Set community settings<br><br>
+
+			• historylimit [1-50]<br>
+			• welcomemessage [message]<br>
+			• voteskipcount [1-9999]<br>
+			• roulettetime [seconds]<br>
+			• dclimit [hours]<br>
+			• cmdtrigger<br>
+			• fb [FACEBOOK_PAGE_URL]<br>
+			• rules [RULES_PAGE_URL]<br>
+			• lang [LANGUAGE_CODE]<br>
+			• cp [USER / BOUNCER / MANAGER / COHOST / HOST]<br>
+			• botname [NAME]<br>
+			• songlimit [SECONDS]<br>
+			• motd [NUMBER] [MESSAGE]<br>
+		</span>
+		<span class="i">set [option1] [option2]</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="swap">swap</h5>
+		<span class="info">Swap two users in waitlist. Use swap 1 2 or swap @user1 @user2 or combine.</span>
+		<span class="i">swap 8 5</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="move">move</h5>
+		<span class="info">Move DJ in waitlist</span>
+		<span class="i">move @user 1</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="dc">dc</h5>
+		<span class="info">Move you to position where you disconnected. <b>DC command has been updated for better functionality</b></span>
+		<span class="i">dc</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="autodc">autodc</h5>
+		<span class="info">When someone join to community, Origem Bot automatically check, whether user has been disconnected from Waitlist. (default OFF)</span>
+		<span class="i">autodc on/off</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="hidecommands">hidecommands</h5>
+		<span class="info">Hide commands. If you write command, Origem Bot delete it and 1 second later write result.</span>
+		<span class="i">hidecommands on/off</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="skiphistory">skiphistory</h5>
+		<span class="info">Skip song if is in history?</span>
+		<span class="i">skiphistory on/off</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="roomstats">roomstats</h5>
+		<span class="info">Show community stats from Origem Bot starts</span>
+		<span class="i">roomstats</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="download">download</h5>
+		<span class="info">Download current video (mp3). <b>Soundcloud not supported!</b></span>
+		<span class="i">download</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="commandlog">commandlog</h5>
+		<span class="info">If you use the "hidecommands" command, Origem Bot will record commands.</span>
+		<span class="i">commandlog on/off</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="lock">lock</h5>
+		<span class="info">Lock DJ booth</span>
+		<span class="i">lock</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="unlock">unlock</h5>
+		<span class="info">Unlock DJ booth</span>
+		<span class="i">unlock</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="clearwaitlist">clearwaitlist</h5>
+		<span class="info">Clear waitlist</span>
+		<span class="i">clearwaitlist</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="botwoot">bot woot</h5>
+		<span class="info">Origem Bot dance!</span>
+		<span class="i">bot woot</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="songban">songban</h5>
+		<span class="info">Ban current song</span>
+		<span class="i">songban</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="songunban">songunban</h5>
+		<span class="info">Unban song (<a href="/banlist/">Find unban code here</a>)</span>
+		<span class="i">songunban BAN_ID</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="voteskip">voteskip</h5>
+		<span class="info">Vote for skip. (same as meh)</span>
+		<span class="i">voteskip</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="roll">roll</h5>
+		<span class="info">Write random number (0-100)</span>
+		<span class="i">roll</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="afks">afks</h5>
+		<span class="info">Write AFK users</span>
+		<span class="i">afks</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="ping">Ping</h5>
+		<span class="info">PING www.plug.dj</span>
+		<span class="i">ping</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="clearchat">clearchat</h5>
+		<span class="info">Clear chat</span>
+		<span class="i">clearchat</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="roulette">roulette</h5>
+		<span class="info">Spin roulette!</span>
+		<span class="i">roulette</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="autoroulette">autoroulette</h5>
+		<span class="info">Spin roulette every X minutes</span>
+		<span class="i">autoroulette 20</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="stoproulette">stoproulette</h5>
+		<span class="info">Stop roulette</span>
+		<span class="i">stoproulette</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="play">play</h5>
+		<span class="info">Join to roulette</span>
+		<span class="i">play</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="players">players</h5>
+		<span class="info">Show roulette players</span>
+		<span class="i">players</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="filter">filter</h5>
+		<span class="info">Song filter ON/OFF</span>
+		<span class="i">filter on/off </span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="wlfilter">wlfilter</h5>
+		<span class="info">WaitList filter on/off</span>
+		<span class="i">wlfilter on/off</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="fb">fb</h5>
+		<span class="info">Show link to facebook</span>
+		<span class="i">fb</span><br class="clearBoth">
+	</div>
+	
+	<div class="command">
+		<h5 id="rules">rules</h5>
+		<span class="info">Show link to rules</span>
+		<span class="i">rules</span><br class="clearBoth">
+	</div>
+
+</div>
+<script>
+$(document).ready(function(){
+	$(".commands").find("a").click(function(){
+		var divid = $(this).html().replace(" ", "");
+		$('html, body').animate({
+			scrollTop: $("#"+divid).offset().top 
+		}, 500);
+	});
+});
+
+</script>

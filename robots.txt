@@ -1,0 +1,3 @@
+Sitemap: https://www.origem-bot.tk/sitemap.xml
+
+User-agent: *

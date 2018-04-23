@@ -1,0 +1,158 @@
+<div class="target-padding">
+	<h1>Artificial intelligence (AI)</h1>
+	<div class="subcontent">
+		<p>
+			<h2>What is AI (Artificial intelligence)?</h2>
+			<div class="subcontent">
+				Origem Bot brain has been updated to next level. Now is Origem Bot like real man! You can talk with your BOT about whatever! Ask him, reply him, tell him.. @Mention isn't required!*
+			</div>
+		</p>
+		<p>
+			<h2>What do you need to know before start?</h2>
+			<div class="subcontent">
+				<b>If you use PUBLIC AI</b>:<br>
+				- nothing, only set in <b>Origem Bot Control Palen</b> AI to <b>public</b><br>
+				Public AI is connected to CLEVERBOT.<br>
+				<br>
+
+				<b>If you use PRIVATE AI</b><br>
+				<span style="color:#FF8585">- you must know what is JSON</span><br>
+				If you don't know, what is JSON, please don't set in CPANEL private AI type. With wrong syntax AI will not working and Origem Bot atuomatically load DEFAULT AI file.
+			</div>
+
+			<h2>JSON file example (default AI file)</h2>
+
+			<div class="subcontent">
+
+			<div id="ai_code_example_container">
+				<pre id="ai_code_example"></pre>
+				<div id="ai_code_toggleHeight">Show more</div>
+			</div>
+			</div>
+
+			<h2>Definition</h2>
+			<div class="subcontent">		
+				<b>onMention</b>: Origem Bot reply from this when you @mention to bot <i>(only first time, read more below*)</i><br>
+				<b>offMention</b>: Origem Bot reply from this everytime. It's recommeded add here only messages like greeting (hi, hello, bye, cya, brb, afk ..)<br>
+				<b>global</b>: Origem Bot reply from this when Origem Bot can't find match message in <b>onMention</b> and <b>offMention</b> and BOT is mentioned.<br><br>
+
+				<b>msgType</b> is type of message. Available options is only "<b>contains</b>" and "<b>mustBe</b>".<br>
+				<b>msgContains</b> is <b>Array</b> with <b>strings</b>. If Origem Bot find one from this strings, Origem Bot automatically reply random string from <b>botReply</b> array.<br>
+				<b>botReply</b> is <b>Array</b> with <b>strings</b> what Origem Bot reply.<br><br>
+
+				<b>msgType: "<u>contains</u>"</b> - Origem Bot reply random message from <b>botReply</b>, where <b>message contains whatever</b> from <b>msgContains</b> array.<br>
+				<b>msgType: "<u>mustBe</u>"</b> - Origem Bot reply random message from <b>botReply</b>, where <b>message is 100% match</b> one from <b>msgContains</b> array.<br>
+				<br>
+			<i>*Mention isn't required only when you are last person who talking with BOT. Only first mention is required. When somebody else post message in chat, you must @mention Origem Bot again.</i><br><br>
+			</div>
+			
+			<h2>Where I can upload my JSON file?</h2>
+			<div class="subcontent">
+				In Origem Bot CPANEL you can use any URL. You can upload it where you want. Server, where you upload the file, must have SSL (<span style="color:#6AD478">https</span>://)! I recommend upload this file to your github and use RAW url.<br><br>
+
+			</div>
+
+
+		</p>
+	</div>
+</div>
+
+<script>
+
+function output(inp) {
+    $("#ai_code_example").html(inp);
+}
+
+function syntaxHighlight(json) {
+    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+        var cls = 'number';
+        if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+                cls = 'key';
+            } else {
+                cls = 'string';
+            }
+        } else if (/true|false/.test(match)) {
+            cls = 'boolean';
+        } else if (/null/.test(match)) {
+            cls = 'null';
+        }
+        return '<span class="' + cls + '">' + match + '</span>';
+    });
+}
+
+$(document).ready(function(){
+
+	var obj = {
+		"onMention": [
+			{
+				"msgType": "contains",
+				"msgContains": [
+					"green",
+					"blue",
+					"red",
+					"orange"
+					],
+
+				"botReply": [
+					"that is color!"				
+					]
+			},
+			{
+				"msgType": "contains",
+				"msgContains": [
+					"Origem Bot"
+					],
+
+				"botReply": [
+					"Origem Bot is your virtual dog",
+					"Origem Bot is so cute",
+					"Origem Bot loves you",
+					"Origem Bot likes you",
+					"Origem Bot is chat-bot",
+					"yes?"				
+					]
+			},
+			{
+				"msgType": "mustBe",
+				"msgContains": [
+					"copy this message to chat"
+				],
+				"botReply": [
+					"You writed \"copy this message to chat\"!"
+				]
+			}
+		],
+
+		"offMention": 	[
+			{
+				"msgContains": [
+					"hi", 
+					"hello"
+					],
+
+				"botReply": [
+					"hello!",
+					"hay!",
+					"welcome! \\o"
+					]
+			}
+		],
+
+
+		"global": [
+				"I'm BOT, please don't talk to me :(",
+				"I said, don't talk to me!",
+				"I dont understand. Please contact Staff!"
+			]
+
+	};
+	var str = JSON.stringify(obj, undefined, 4);
+	output(syntaxHighlight(str));
+	$("#ai_code_toggleHeight").click(function(){
+		$(this).remove();
+		$("#ai_code_example").css("height", "auto");
+	})
+});
+</script>
