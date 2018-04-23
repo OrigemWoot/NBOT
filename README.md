@@ -36,6 +36,7 @@ https://www.facebook.com/origemwootnew
 ## TEAM
 
 - [Ciker](https://github.com/CikerDeveloper) __(DEVELOPER)__
+- [DAVE](https://github.com/CikerDeveloper) __(FOUNDER/PREVIOUS DEVELOPER)__
 
 ## Languages
 
