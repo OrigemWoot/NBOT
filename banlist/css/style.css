@@ -1,0 +1,58 @@
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+html, body {
+	margin: 0 ;
+	padding: 0;
+	background:#7DCBFF;
+	font-family:"Arial";
+}
+.logo {
+	display:block;
+	margin: 0 auto;
+}
+h1.slogan {
+
+	letter-spacing: 5px;
+	color:darkred;
+	display:block;
+	margin: 0 auto;
+	text-align: center
+}
+.bansTable {
+	width:75%;
+	margin:  0 auto;
+	background:#fff;
+}
+.bansTable td {
+	padding: 10px;
+}
+.bansTable .id {
+	width:130px;
+	text-align:center;
+	font-size:25px;
+	background:#eee;
+	color:#666;
+}
+.bansTable .songName {
+	font-weight:bold;
+}
+.bansTable .songName span {
+	font-weight:100;
+	font-style: italic;
+}
+.bansTable tr.thead td {
+	font-size:17px;
+	text-align:left;
+}
+.bansTable .search {
+	height: 130px;
+}
+.bansTable .search .searchPut{
+	width:100%;
+	height:50px;
+	padding:10px;
+	font-size:25px;
+	outline:none;
+}

@@ -1,0 +1,64 @@
+{
+	"onnMention": [
+		{
+			"msgType": "contains",
+			"msgContains": [
+				"green",
+				"blue",
+				"red",
+				"orange"
+				],
+
+			"botReply": [
+				"that is color!"				
+				]
+		},
+		{
+			"msgType": "contains",
+			"msgContains": [
+				"nbot"
+				],
+
+			"botReply": [
+				"NBOT is your virtual dog",
+				"NBOT is so cute",
+				"NBOT loves you",
+				"NBOT likes you",
+				"NBOT is chat-bot",
+				"yes?"				
+				]
+		},
+		{
+			"msgType": "mustBe",
+			"msgContains": [
+				"copy this message to chat"
+			],
+			"botReply": [
+				"You writed \"copy this message to chat\"!"
+			]
+		}
+	],
+
+	"offMention": 	[
+		{
+			"msgContains": [
+				"hi", 
+				"hello"
+				],
+
+			"botReply": [
+				"hello!",
+				"hay!",
+				"welcome! \\o"
+				]
+		}
+	],
+
+
+	"global": [
+			"I'm BOT, please don't talk to me :(",
+			"I said, don't talk to me!",
+			"I dont understand. Please contact Staff!"
+		]
+
+}
