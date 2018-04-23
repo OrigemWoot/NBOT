@@ -1,0 +1,314 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,latin-ext);
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color:#333;
+	height: 100%;
+	width:100%;
+}
+a {
+	color:blue;
+}
+
+.nButton {
+	display: block;
+
+	background-image: url(/img/nbot_button.png);
+	background-size: 178px 181px;
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	height: 181px;
+	line-height: 181px;
+	border:none;
+	outline:none;
+	color:white !important;
+	font-weight: 700;
+	font-size:23px;
+	text-shadow: 0px 1px 2px #000;
+
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+
+h1.big, h2.tinyAbout, .textLeft h3, .textRight h3 { text-shadow: 3px 3px 2px #000; text-align: center;color:white;margin: 0 auto; width:100%;
+  line-height: 35px;}
+h1.big { font-size:40px;}
+h1.big span { font-size:25px;}
+
+h1.big { 
+	position: absolute;
+	top:50px;
+}
+h2.tinyAbout {
+	position: absolute;
+	top:450px;
+}
+
+#background {
+	z-index: -5;
+	position: fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:100%;
+	background-image: url(/img/pozadie_1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	
+	
+}
+
+#logo {
+	width:100%;
+	height:146px;
+	margin: 0 auto;
+	position: absolute;
+	top:230px;
+	background-image: url(/img/logo_white.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center center
+}
+
+.start {
+	position: absolute;
+	top: 550px;
+	width:100%;
+}
+
+.white {
+	position: relative;
+	background-color: white;
+	width:100%;
+	text-align: center;
+}
+.white h3 {
+	color:black !important;
+	text-shadow:none;
+}
+
+.fullHeight {
+	height:100%;
+}
+.autoHeight {
+	height: auto;
+}
+.clearBoth { clear:both;}
+.break {
+	position: relative;
+	background-color: transparent;
+	width: 100%;
+	color:white !important;
+}
+.index {
+	height: 100%;
+	position: relative;
+}
+
+.becomeTranslatorButton {
+	position: absolute;top:20px;
+	right:0px;
+	background:#FFFEED;
+	text-align:center;
+	padding:12px 25px 12px 25px;
+	color:black;
+	font-size:13px;
+}
+.becomeTranslatorButton a {
+	color:blue;
+}
+.textLeft, .textRight {
+	text-align: center;
+	padding:70px 50px;
+
+}
+
+.textLeft h3  {
+	float:left;
+	width:50%;
+	font-size:30px;
+	padding:0px 30px;
+}
+
+
+.textLeft h3 span,
+.textRight h3 span  {
+	font-size:20px;
+	font-weight:400;
+}
+
+.textLeft img,
+.textRight img {
+	max-width: 500px;
+	
+}
+img.vlajky {
+	width:auto;
+}
+.lista {
+	position: absolute;
+	left:0px;
+	bottom:-14px;
+	width: 100%;
+	background-image: url(/img/lista.png);
+	height: 28px;
+}
+.textRight h3 {
+	float:right;
+	width:50%;
+	font-size:30px;
+	padding:0px 30px;
+}
+.languages {
+	width:783px;
+	max-width: 100% !important;
+	margin: 0 auto;
+	position:absolute;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	bottom: -10px;
+	z-index:1
+}
+
+
+.buttonBlue {
+	-moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+	background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+	background-color:#007dc1;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:15px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.buttonBlue:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+	background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+	background-color:#0061a7;
+}
+.buttonBlue:active {
+	position:relative;
+	top:1px;
+}
+#scrollTop {
+	display:none;
+	position: fixed;
+	bottom:50px;
+	right:70px;
+	width:52px;
+	height:52px;
+	z-index: 10;
+	cursor:pointer;
+	background-image: url(/img/scrollTop.png);
+	background-size: 100% 100%;
+}
+.inline { display:inline-block;vertical-align: top;width:50%;}
+.paddingTop { padding: 100px 0px 0px 0px;}
+
+
+ul.commands {
+	list-style: none;
+	margin: 20px;
+	padding: 0
+}
+ul.commands li {
+	display:inline-block;
+	width:25%;
+}
+ul.commands li a {
+	display: block;
+	color:#333;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding:5px;
+}
+ul.commands li a:hover{
+	background:#00c4ed;
+	color:white;
+	cursor:pointer;
+}
+.commandList {
+	text-align: left !important;
+	padding: 50px;
+}
+.command { 
+	display:table;
+	clear:both;
+	position: relative;
+	height:50px;
+	width:100%;
+}
+.command h5 {
+	display:table-cell;
+	text-transform: uppercase;
+	width:15%;
+	vertical-align: middle;
+}
+.command span.info {
+	display:table-cell;
+	background:#eee;
+	vertical-align: middle;
+	width:55%;
+	padding: 0px 0px 0px 20px;
+}
+.command span.i {
+	color:white;
+	background-color: #00c4ed;
+	display:table-cell;
+	width:30%;
+	vertical-align: middle;
+	padding: 0px 0px 0px 20px;
+}
+.codeDiv {
+	font-size:12px;padding:7px;background:#eee
+}
+@media only screen and  (max-width : 1024px) {
+	.textLeft h3, .textRight h3  {
+		float:left;
+		width:100%;
+		font-size:30px;
+		padding:0px 30px 30px 0px;
+	}
+	.inline { display:block;text-align:center; width:100%;}
+
+}

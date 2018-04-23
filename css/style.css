@@ -1,0 +1,215 @@
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color:#333;
+	height: 100%;
+	width:100%;
+}
+h1,h2,h3 { padding: 10px; margin: 0px;font-weight: 100;background:#eee;}
+
+
+.inline { display:inline-block;vertical-align: top;width:50%;}
+.break { clear:both;}
+.padding { padding: 0px 30px 0px 30px;}
+
+#footer {
+	background:#333;
+	color:silver;
+	text-align: right;
+	font-size:12px;
+	padding:20px;
+	clear:both;
+}
+#header {
+	position: relative;
+	height: 70px;
+	width: 100%;
+	min-width: 1000px;
+	z-index:-3;
+	background-color: #fff;
+}
+
+.logo_white, .logo_black {
+	height:60px;
+	position: fixed;
+	top:5px;
+	left:30px;
+
+	z-index: -2;
+}
+.logo_white{
+	opacity:0;
+}
+
+
+.navigation {
+	position: relative;	
+	background:#333;
+	height:40px;
+	z-index:1;
+	width:100%;
+	min-width: 1000px;
+	text-align: center;
+	right:15px;
+}
+
+.navigation ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.navigation ul li {
+	display: inline-block;
+}
+.navigation ul li a {
+	line-height: 40px;
+	padding:0px 20px;
+	display: inline-block;
+	background: none;
+	color:#fff;
+
+	font-size: 13px;
+	text-decoration: none;
+	outline:none;
+}
+.navigation ul li a:hover, .navigation ul li a.active {
+	
+	background: #00c4ed;
+	color:#fff;
+
+}
+
+#stats {
+	width:100%;
+	min-width: 1000px;
+	height:70px;
+	color:black;
+	background:white;
+	padding-left:200px;
+}
+#stats .activations, #stats .lastPlayed {
+	height: 70px;
+	line-height: 70px;
+
+}
+
+#stats .activations span{
+	font-size:25px;
+}
+
+#stats .lastPlayed span{
+	font-weight: bold
+}
+
+#background {
+	z-index: -5;
+	position: absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:350px;
+	background-image: url(/img/plug_background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+	
+	
+}
+ .white {
+	background:#fafafa;
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:350px;
+	height:auto;
+	padding:20px 0px 0px 0px;
+	line-height: 1.7em;
+	z-index:0;
+}
+.white a {
+	color:blue;
+
+}
+ul.commands {
+	list-style: none;
+	margin: 20px;
+	padding: 0
+}
+ul.commands li {
+	display:inline-block;
+	width:25%;
+}
+ul.commands li a {
+	display: block;
+	color:#333;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding:5px;
+}
+ul.commands li a:hover{
+	background:#00c4ed;
+	color:white;
+	cursor:pointer;
+}
+
+.command { 
+clear:both;
+position: relative;
+border-bottom: 1px solid grey
+}
+.command h3 {
+	display:block;
+	background:#ddd;
+	text-transform: uppercase;
+	float:left;
+	width:15%;
+}
+.command span {
+	display: block;
+	padding:10px 20px;
+	background:#eee;
+	float:left;
+	width:55%;
+}
+.command i {
+	color:white;
+	background-color: #00c4ed;
+	float:left;
+	padding:10px;
+	width:30%;
+}
+
+.tryit { padding-top:150px;}
+.nButton {
+	display: block;
+	margin: 0 auto;
+	background-image: url(/img/nbot_button.png);
+	background-size: 178px 181px;
+	background-color:transparent;
+	width: 178px;
+	height: 181px;
+	line-height: 181px;
+	border:none;
+	outline:none;
+	color:white !important;
+	font-weight: 700;
+	font-size:23px;
+	text-shadow: 0px 1px 2px #000;
+
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	cursor:pointer;
+
+}

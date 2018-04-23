@@ -1,0 +1,339 @@
+.nBOTControlPanel {
+  display: none;
+  overflow: auto;
+  width: 345px;
+  position: absolute;
+  top: 54px;
+  right: -385px;
+  z-index: 10;
+  min-height: 530px;
+  bottom: 54px;
+}
+
+.nBOTControlPanel input[type=text].textBox,
+.nBOTControlPanel select.textBox {
+  width: 120px;
+  font-size: 12px;
+  height: 25px;
+  outline: none;
+  margin: 0;
+}
+
+.nBOTControlPanel select.textBox {
+  height: 25px;
+  display: block;
+  float: left;
+}
+
+.nBOTControlPanel .nBOTactionButton {
+  cursor: pointer;
+  border: 0;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: 100;
+  text-decoration: none;
+  color: #FFF;
+  padding: 5px 5px 5px 6px;
+}
+
+.nBOTControlPanel div .text.left {
+  float: left;
+  width: 50%;
+}
+
+.nBOTControlPanel div table td {
+  width: 190px;
+  padding: 0 10px;
+}
+
+.nBOTControlPanel div table th {
+  font-weight: 300;
+  text-align: left;
+}
+
+.nBOTCPoff {
+  background-color: #8B0000!important;
+}
+
+.NarcisBOTBadge {
+  background-image: url(https://source.nbot.eu/img/badge.png)!important;
+}
+
+.nbotWarning {
+  border: 1px solid red;
+  background-color: #701919;
+  color: #fff;
+  font-size: 13px;
+  margin: 10px;
+  padding: 7px;
+}
+
+.theme-black {
+  background: #0a0a0a;
+  color: #808691;
+}
+
+.theme-black .hlavnyNadpis {
+  overflow: hidden;
+  font-size: 17px;
+  color: #eee;
+  text-indent: 20px;
+  height: 30px;
+  line-height: 30px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.theme-black .hlavnyNadpis i.icon {
+  left: 10px;
+}
+
+.theme-black .hlavnyNadpis span {
+  display: block;
+  margin-left: 15px;
+}
+
+.theme-black .polozka {
+  height: 60px;
+  position: relative;
+  width: 340px;
+}
+
+.theme-black .polozka .label {
+  color: #ccc;
+  text-indent: 30px;
+}
+
+.theme-black input[type=text],
+.theme-black select,
+.theme-black input[type=password] {
+  background-color: #333;
+  color: #ddd;
+  border: none;
+  outline: none;
+  height: 27px;
+  text-indent: 5px;
+}
+
+.theme-black .polozka .input {
+  display: inline-block;
+  width: 90%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0 0 0 30px;
+}
+
+.theme-black .polozka .nbot-submit {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+}
+
+.theme-black .polozka .nbot-submit input {
+  width: 100%;
+  height: 27px;
+  background-color: #0684C9;
+  color: #FFF;
+}
+
+.theme-black .permissionPolozka {
+  width: 90%;
+  position: relative;
+  margin: 1px auto;
+}
+
+.theme-black .permissionPolozka .label {
+  display: inline-block;
+  color: #ccc;
+  width: 145px;
+}
+
+.theme-black .permissionPolozka .input {
+  display: inline-block;
+  vertical-align: top;
+  height: 27px;
+}
+
+.theme-black .permissionPolozka .nbot-submit {
+  height: 27px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.theme-black .permissionPolozka .input input,
+.theme-black .permissionPolozka .input select {
+  width: 150px;
+}
+
+.theme-black .permissionPolozka .nbot-submit input {
+  width: 30px;
+  height: 27px;
+  background-color: #0684C9;
+  color: #FFF;
+}
+
+.theme-black .nSubmit {
+  text-decoration: none;
+  cursor: pointer;
+  background: #0684C9;
+  color: #FFF;
+  display: block;
+  width: 90%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  margin: 15px auto;
+}
+
+.theme-black .nSubmit.small {
+  width: auto;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  display: inline-block;
+  margin: 15px 10px;
+  padding: 0 10px;
+}
+
+.theme-black .nSubmit:hover,
+.theme-black .nSubmit:active {
+  background: #076FA8;
+}
+
+.theme-black input[type=text].ccommand_command {
+  background: #05669C!important;
+  color: #FFF!important;
+  width: 100%!important;
+}
+
+.theme-black .anButton {
+  background-color: #05669C;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 12px!important;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  padding: 0;
+}
+
+.break {
+  clear: both;
+}
+
+#nbot_panel_loader {
+  position: absolute;
+  z-index: 99999;
+  display: none;
+  top: 54px;
+  right: 0;
+  bottom: 54px;
+  width: 345px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(https://source.nbot.eu/img/ajax-loader.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.theme-black a.nLink {
+  color: #bbb;
+  display: block;
+  text-align: left;
+  cursor: pointer;
+}
+
+.theme-black a.nLink:hover {
+  color: #ddd;
+}
+
+.nbot_row {
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+.nbot_row a span {
+  margin-left: 30px!important;
+}
+
+.nbot_icon {
+  background-image: url(https://source.nbot.eu/img/nbot_icons.png)!important;
+}
+
+.icon_ai {
+  background-position: 0 0;
+}
+
+.icon_passwordchange {
+  background-position: -30px 0;
+}
+
+.icon_cookie {
+  background-position: -60px 0;
+}
+
+.icon_language {
+  background-position: -90px 0;
+}
+
+.icon_settings {
+  background-position: -120px 0;
+}
+
+.icon_cmdperm {
+  background-position: -150px 0;
+}
+
+.icon_checked {
+  background-position: -180px 0;
+}
+
+.icon_smiley {
+  background-position: -210px 0;
+}
+
+.icon_badwords {
+  background-position: -240px 0;
+}
+
+.inpanel_infobox {
+  color: #000;
+  font-size: 13px;
+  background-color: #ddd;
+  margin: 15px 20px;
+  padding: 10px;
+}
+
+.inpanel_infobox a {
+  color: blue;
+}
+
+.transparent {
+  background: none!important;
+  padding: 0!important;
+}
+
+.nbot_textarea {
+  background: #1C1F25;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  color: #FFF;
+  padding: 5px;
+}
+
+.nBOTControlPanel div table,
+.theme-black .polozka .input input,
+.theme-black .polozka .input select,
+.theme-black input[type=text].ccommand_labels {
+  width: 100%;
+}
