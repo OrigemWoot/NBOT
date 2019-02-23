@@ -35,8 +35,8 @@ https://www.facebook.com/origemwootnew
 
 ## TEAM
 
-- [Ciker](https://github.com/CikerDeveloper) __(DEVELOPER)__
-- [DAVE](https://github.com/CikerDeveloper) __(FOUNDER/PREVIOUS DEVELOPER)__
+- [R00tS3c](https://github.com/R00tS3c) __(DEVELOPER)__
+- [DAVE](https://github.com) __(FOUNDER/PREVIOUS DEVELOPER)__
 
 ## Languages
 
@@ -56,5 +56,5 @@ GPL-3.0
 
 ---
 
-> GitHub [@CikerDeveloper](https://github.com/CikerDeveloper) &nbsp;&middot;&nbsp;
+> GitHub [@R00tS3c](https://github.com/R00tS3c) &nbsp;&middot;&nbsp;
 
